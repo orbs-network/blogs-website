@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r /Users/denis/Documents/projects/website/content/blog /Users/denis/Documents/projects/blogs/content/blog)",
+      "Bash(cp -r /Users/denis/Documents/projects/website/content/_shared /Users/denis/Documents/projects/blogs/content/_shared)",
+      "Bash(cp -r /Users/denis/Documents/projects/website/content/common /Users/denis/Documents/projects/blogs/content/common)",
+      "Bash(# Copy all blog images - this is the big one\ncp -r /Users/denis/Documents/projects/website/assets/img/blog /Users/denis/Documents/projects/blogs/assets/img/blog && echo \"Blog images copied\" && du -sh /Users/denis/Documents/projects/blogs/assets/img/blog/)",
+      "Bash(yarn install:*)",
+      "Bash(npx sass:*)",
+      "Bash(npx cuttlebelle:*)",
+      "Bash(sh prebuild.sh 2>&1)",
+      "Bash(cuttlebelle)",
+      "Bash(node:*)",
+      "Bash(# Move blog list files to root\ncp /Users/denis/Documents/projects/blogs/content/blog/index.yml /Users/denis/Documents/projects/blogs/content/index.yml\ncp /Users/denis/Documents/projects/blogs/content/blog/body.md /Users/denis/Documents/projects/blogs/content/body.md\ncp /Users/denis/Documents/projects/blogs/content/blog/blogs.md /Users/denis/Documents/projects/blogs/content/blogs.md\ncp /Users/denis/Documents/projects/blogs/content/blog/governance-blogs.md /Users/denis/Documents/projects/blogs/content/governance-blogs.md\n\n# Remove old blog directory\nrm -rf /Users/denis/Documents/projects/blogs/content/blog\n\necho \"Moved blog list to root\")",
+      "Bash(grep -l \"script: blog/index\" /Users/denis/Documents/projects/blogs/content/*/index.yml)"
+    ]
+  }
+}
