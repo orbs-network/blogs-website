@@ -1,2 +1,4 @@
 node_modules
-site
+site/
+.idea/
+.DS_Store

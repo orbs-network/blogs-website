@@ -22,13 +22,14 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "moment": "^2.29.1",
-    "sass": "^1.45.1",
     "node-html-parser": "^5.3.3",
     "rss-generator": "0.0.3",
+    "sass": "^1.45.1",
     "xml": "^1.0.1",
     "xmlbuilder": "^15.1.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.13.0"
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "cuttlebelle": "^1.0.0-alpha.80"
   }
 }
